@@ -1,0 +1,3 @@
+0.0.1
+------
+-  Simply convert Marvin Journal (in CSV) to My Clippings.txt
