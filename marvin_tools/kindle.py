@@ -71,7 +71,7 @@ def parse_kindle_time(meta_line):
     if is_en:
         locale.setlocale(locale.LC_TIME, "en_US")
         t = dt.datetime.strptime(time_str.strip(), 'Added on %A, %B %d, %Y %I:%M:%S %p')
-        pos = re.findall(r"(?:page (\d+) .*?)?(\d+)-(\d+)", meta_line)[0]
+        pos = re.findall(r"(?:page (\d+) .*?)?(\d+)(?:-(\d+))? \|", meta_line)[0]
     else:
         locale.setlocale(locale.LC_TIME, "zh_CN")
         t = dt.datetime.strptime(time_str.strip(), '添加于 %Y年%b月%d日%A %p%I:%M:%S')
