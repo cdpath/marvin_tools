@@ -31,10 +31,9 @@ News
 setup(
     name='marvin_tools',
     version=marvin_tools.__version__,
-    description='Instant coding answers via the command line',
+    description='',
     long_description=long_description,
     classifiers=[
-        "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 2",
